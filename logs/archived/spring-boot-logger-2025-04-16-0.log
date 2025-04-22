@@ -1,0 +1,26 @@
+2025-04-16 16:41:13,625 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 15116 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-16 16:41:13,637 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-16 16:41:19,123 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-16 16:41:22,752 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-16 16:41:23,442 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e241a3
+2025-04-16 16:41:23,449 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-16 16:41:23,643 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-16 16:41:23,649 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-16 16:41:25,503 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-16 16:41:27,754 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-16 16:41:27,845 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 15.787 seconds (process running for 19.9)
+2025-04-16 16:42:40,658 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-16 16:42:40,669 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
+2025-04-16 16:42:51,351 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 21292 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-16 16:42:51,353 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-16 16:42:53,664 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-16 16:42:55,151 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-16 16:42:55,571 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9c2d8c3
+2025-04-16 16:42:55,577 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-16 16:42:55,683 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-16 16:42:55,686 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-16 16:42:56,826 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-16 16:42:57,770 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-16 16:42:57,830 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 7.714 seconds (process running for 12.536)
+2025-04-16 16:43:53,928 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-16 16:43:53,938 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.

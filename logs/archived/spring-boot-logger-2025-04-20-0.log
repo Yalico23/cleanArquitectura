@@ -1,0 +1,202 @@
+2025-04-20 11:42:18,812 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 14016 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-20 11:42:18,816 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-20 11:42:22,274 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-20 11:42:24,589 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-20 11:42:25,269 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b560d2b
+2025-04-20 11:42:25,275 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-20 11:42:25,446 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 11:42:25,449 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-20 11:42:29,516 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 11:42:31,660 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-20 11:42:31,811 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 14.379 seconds (process running for 17.349)
+2025-04-20 11:43:34,442 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 11:44:06,274 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-6] [-] Buscando cliente por ID: 1
+2025-04-20 11:44:06,287 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:44:17,481 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-7] [-] Buscando cliente por ID: 1
+2025-04-20 11:44:17,482 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:44:19,564 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-10] [-] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "w"]
+2025-04-20 11:44:25,977 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-4] [-] Buscando cliente por ID: 2
+2025-04-20 11:44:25,979 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:44:29,437 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-5] [-] Buscando cliente por ID: 1
+2025-04-20 11:44:29,440 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:44:31,166 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-8] [-] Buscando cliente por ID: 3
+2025-04-20 11:44:31,170 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:44:31,176 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteNoEncontrado: Cliente no encontrado con id: 3]
+2025-04-20 11:44:38,599 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-9] [-] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "f"]
+2025-04-20 11:44:46,111 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-3] [-] Buscando cliente por ID: 1
+2025-04-20 11:44:46,112 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:45:19,896 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-6] [-] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<org.yalico.backend.apirest.app.domain.models.Cliente> org.yalico.backend.apirest.app.infrastructure.controllers.ClienteControllers.crearCliente(org.yalico.backend.apirest.app.infrastructure.dto.request.ClienteDTORequest)]
+2025-04-20 11:45:25,553 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-10] [-] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.yalico.backend.apirest.app.domain.models.Cliente> org.yalico.backend.apirest.app.infrastructure.controllers.ClienteControllers.crearCliente(org.yalico.backend.apirest.app.infrastructure.dto.request.ClienteDTORequest) with 3 errors: [Field error in object 'clienteDTORequest' on field 'apellidos': rejected value [null]; codes [NotBlank.clienteDTORequest.apellidos,NotBlank.apellidos,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteDTORequest.apellidos,apellidos]; arguments []; default message [apellidos]]; default message [no debe estar vacío]] [Field error in object 'clienteDTORequest' on field 'email': rejected value [null]; codes [NotBlank.clienteDTORequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteDTORequest.email,email]; arguments []; default message [email]]; default message [no debe estar vacío]] [Field error in object 'clienteDTORequest' on field 'nombre': rejected value [null]; codes [NotBlank.clienteDTORequest.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteDTORequest.nombre,nombre]; arguments []; default message [nombre]]; default message [no debe estar vacío]] ]
+2025-04-20 11:46:23,232 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-4] [-] Creando cliente: ClienteDTORequest[nombre=Miguel, apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 11:46:23,269 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id from clientes ce1_0 where ce1_0.email=? limit ?
+2025-04-20 11:46:23,293 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] insert into clientes (apellidos,create_at,email,nombre) values (?,?,?,?)
+2025-04-20 11:46:33,170 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 11:46:38,358 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-8] [-] Buscando cliente por ID: 3
+2025-04-20 11:46:38,359 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:46:50,001 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:46:50,009 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] delete from clientes where id=?
+2025-04-20 11:46:56,383 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-2] [-] Buscando cliente por ID: 3
+2025-04-20 11:46:56,386 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 11:46:56,392 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteNoEncontrado: Cliente no encontrado con id: 3]
+2025-04-20 11:46:59,879 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 11:51:13,169 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 12:01:36,208 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 12:04:12,540 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-8] [-] Buscando cliente por ID: 2
+2025-04-20 12:04:12,543 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:05:25,220 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-3] [-] Creando cliente: ClienteDTORequest[nombre=Miguel, apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:05:25,223 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id from clientes ce1_0 where ce1_0.email=? limit ?
+2025-04-20 12:05:25,224 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] insert into clientes (apellidos,create_at,email,nombre) values (?,?,?,?)
+2025-04-20 12:07:16,089 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-10] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel, apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:07:16,091 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:07:16,102 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] update clientes set apellidos=?,create_at=?,email=?,nombre=? where id=?
+2025-04-20 12:08:08,468 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 12:08:17,974 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-20 12:08:17,985 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
+2025-04-20 12:45:33,440 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 23112 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-20 12:45:33,443 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-20 12:45:36,249 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-20 12:45:37,231 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-20 12:45:37,470 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37508e12
+2025-04-20 12:45:37,472 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-20 12:45:37,543 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 12:45:37,544 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-20 12:45:39,024 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 12:45:39,540 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-20 12:45:39,576 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 7.165 seconds (process running for 8.031)
+2025-04-20 12:45:46,829 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 12:45:55,551 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:45:55,620 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] delete from clientes where id=?
+2025-04-20 12:46:00,964 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-4] [-] Creando cliente: ClienteDTORequest[nombre=Miguel, apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:46:01,009 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id from clientes ce1_0 where ce1_0.email=? limit ?
+2025-04-20 12:46:01,028 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteYaExistente: Ya existe un cliente registrado con el email: osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:46:06,381 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 12:46:15,601 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-7] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel, apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:46:15,603 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:46:15,609 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-20 12:46:15,613 WARN o.y.b.a.a.a.u.ActualizarClienteUseCaseImpl [http-nio-8080-exec-7] [-] Intento de duplicación de cliente con email existente: osyalicoe@ucvvirtual.edu.pe
+2025-04-20 12:46:15,624 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-7] [-] Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Ya existe otro cliente con el mismo email"]
+2025-04-20 12:46:29,941 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-20 12:46:29,951 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
+2025-04-20 12:49:40,006 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 17240 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-20 12:49:40,009 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-20 12:49:44,205 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-20 12:49:45,821 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-20 12:49:46,057 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@88806f
+2025-04-20 12:49:46,060 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-20 12:49:46,124 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 12:49:46,125 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-20 12:49:47,547 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 12:49:48,046 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-20 12:49:48,238 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 8.989 seconds (process running for 9.548)
+2025-04-20 12:50:06,553 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-2] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel, apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:50:06,606 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:50:06,763 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-20 12:50:06,766 WARN o.y.b.a.a.a.u.ActualizarClienteUseCaseImpl [http-nio-8080-exec-2] [-] Intento de duplicación de cliente con email existente: osyalicoe@ucvvirtual.edu.pe
+2025-04-20 12:50:06,831 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteDuplicado: Ya existe otro cliente con el mismo email osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:50:33,354 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-3] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel (Actualizado), apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:50:33,355 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:50:33,359 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-20 12:50:33,363 WARN o.y.b.a.a.a.u.ActualizarClienteUseCaseImpl [http-nio-8080-exec-3] [-] Intento de duplicación de cliente con email existente: osyalicoe@ucvvirtual.edu.pe
+2025-04-20 12:50:33,369 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-3] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteDuplicado: Ya existe otro cliente con el mismo email osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:50:36,234 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 12:50:52,307 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-5] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel (Actualizado), apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:50:52,310 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:50:52,313 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-20 12:50:52,341 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] update clientes set apellidos=?,create_at=?,email=?,nombre=? where id=?
+2025-04-20 12:51:54,048 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-20 12:51:54,058 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
+2025-04-20 12:52:01,005 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 26804 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-20 12:52:01,008 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-20 12:52:03,204 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-20 12:52:04,132 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-20 12:52:04,352 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c0cd6a8
+2025-04-20 12:52:04,354 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-20 12:52:04,403 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 12:52:04,405 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-20 12:52:05,915 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 12:52:06,432 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-20 12:52:06,505 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 6.313 seconds (process running for 6.901)
+2025-04-20 12:52:09,071 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-2] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel (Actualizado), apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:52:09,145 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:52:09,379 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-20 12:52:09,419 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] update clientes set apellidos=?,create_at=?,email=?,nombre=? where id=?
+2025-04-20 12:54:02,137 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-5] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel (Actualizado), apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:54:02,139 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:54:02,142 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-20 12:54:02,144 WARN o.y.b.a.a.a.u.ActualizarClienteUseCaseImpl [http-nio-8080-exec-5] [-] Intento de duplicación de cliente con email existente: osyalicoe@ucvvirtual.edu.pe
+2025-04-20 12:54:02,172 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-5] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteDuplicado: Ya existe otro cliente con el mismo email osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:54:04,085 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-6] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel (Actualizado), apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:54:04,088 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:54:04,094 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-6] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteNoEncontrado: No se encontró un cliente con el ID: 3]
+2025-04-20 12:54:07,534 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-7] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel (Actualizado), apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:54:07,536 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:54:07,542 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-20 12:54:07,544 WARN o.y.b.a.a.a.u.ActualizarClienteUseCaseImpl [http-nio-8080-exec-7] [-] Intento de duplicación de cliente con email existente: osyalicoe@ucvvirtual.edu.pe
+2025-04-20 12:54:07,548 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-7] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteDuplicado: Ya existe otro cliente con el mismo email osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:54:24,433 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-8] [-] Actualizando cliente: ClienteDTORequest[nombre=Miguel (Actualizado), apellidos=Roman Antezana, email=osyalicoe@ucvvirtual.edu.pe]
+2025-04-20 12:54:24,436 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-20 12:54:24,442 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-20 12:58:59,047 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 12:59:03,789 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:33:59,425 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:34:07,116 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:34:08,169 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:34:14,026 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:34:36,047 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:34:40,073 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:35:01,916 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:35:02,931 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:35:26,042 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:35:53,042 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:35:57,086 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:36:03,497 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:36:11,052 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:36:16,056 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:36:18,151 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:36:25,966 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:36:39,069 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:36:41,757 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:38:17,094 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:38:22,332 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:38:35,089 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:38:38,050 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:38:43,061 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:38:49,059 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:38:58,052 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:39:22,036 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:40:58,863 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:41:02,063 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:41:07,021 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:42:13,559 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 13:42:51,478 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-20 13:42:51,484 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
+2025-04-20 20:26:47,369 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 19384 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-20 20:26:47,373 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-20 20:26:50,291 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-20 20:26:51,662 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-20 20:26:51,963 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@289ae107
+2025-04-20 20:26:51,966 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-20 20:26:52,040 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 20:26:52,041 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-20 20:26:53,949 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 20:26:54,753 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-20 20:26:54,823 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 8.275 seconds (process running for 14.765)
+2025-04-20 20:27:16,223 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:27:45,153 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:27:47,747 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:27:59,179 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:03,667 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:12,555 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:16,411 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:24,962 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:33,901 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:34,937 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:52,220 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:54,967 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:56,373 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:28:57,617 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:29:08,025 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:29:10,189 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:29:16,606 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-20 20:43:46,868 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-20 20:43:46,881 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
