@@ -1,5 +1,7 @@
 package org.yalico.backend.apirest.app.domain.ports.output;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.yalico.backend.apirest.app.domain.models.Cliente;
 
 import java.util.List;
@@ -11,6 +13,7 @@ public interface ClienteRepositoryPort {
     Optional<Cliente> findById(Long id);
     void deleteById(Long id);
     List<Cliente> findAll();
+    Page<Cliente> findAll(Pageable pageable);
     Boolean existByEmail(String email);
     Optional<Cliente> findByEmail(String email);
 }

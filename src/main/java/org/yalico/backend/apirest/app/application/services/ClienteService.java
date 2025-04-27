@@ -1,6 +1,7 @@
 package org.yalico.backend.apirest.app.application.services;
 
-import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.yalico.backend.apirest.app.domain.models.Cliente;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Service
 public class ClienteService implements FindClientesUseCase,
+        FindClientePageableUseCase,
         ActualizarClienteUseCase,
         CrearClienteUseCase,
         DeleteClienteUseCase,
@@ -20,17 +22,20 @@ public class ClienteService implements FindClientesUseCase,
     private final FindClientesUseCase findClientesUseCase;
     private final DeleteClienteUseCase deleteClienteUseCase;
     private final CrearClienteUseCase crearClienteUseCase;
+    private final FindClientePageableUseCase findClientesPageableUseCase;
 
     public ClienteService(FindClienteUseCase findClienteUseCase,
                           ActualizarClienteUseCase actualizarClienteUseCase,
                           FindClientesUseCase findClientesUseCase,
                           DeleteClienteUseCase deleteClienteUseCase,
-                          CrearClienteUseCase crearClienteUseCase) {
+                          CrearClienteUseCase crearClienteUseCase,
+                          FindClientePageableUseCase findClientesPageableUseCase) {
         this.findClienteUseCase = findClienteUseCase;
         this.actualizarClienteUseCase = actualizarClienteUseCase;
         this.findClientesUseCase = findClientesUseCase;
         this.deleteClienteUseCase = deleteClienteUseCase;
         this.crearClienteUseCase = crearClienteUseCase;
+        this.findClientesPageableUseCase = findClientesPageableUseCase;
     }
 
     @Transactional
@@ -61,5 +66,11 @@ public class ClienteService implements FindClientesUseCase,
     @Override
     public void deleteCliente(Long id) {
         deleteClienteUseCase.deleteCliente(id);
+    }
+
+    @Transactional(readOnly = true)
+    @Override
+    public Page<Cliente> findAll(Pageable pageable) {
+        return findClientesPageableUseCase.findAll(pageable);
     }
 }

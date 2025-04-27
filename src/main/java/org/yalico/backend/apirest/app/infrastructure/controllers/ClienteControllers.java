@@ -4,6 +4,9 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +32,14 @@ public class ClienteControllers {
     public ResponseEntity<List<Cliente>> findClientes(){
         return ResponseEntity.ok(clienteService.findAll());
     }
+    // nota : Obtener cliente con paginable
+    @GetMapping("/clientes/page/{page}")
+    public ResponseEntity<Page<Cliente>> findClientesPageable(@PathVariable("page")Integer page){
+        logger.info("Buscando clientes con paginable");
+        Pageable pageable = PageRequest.of(page , 4);
+        return ResponseEntity.ok(clienteService.findAll(pageable));
+    }
+
     // nota : Obtener cliente por id
     @GetMapping("/{id}")
     public ResponseEntity<Cliente> findClienteById(@PathVariable("id") Long id){

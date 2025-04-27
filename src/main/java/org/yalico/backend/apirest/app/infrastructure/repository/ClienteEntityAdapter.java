@@ -1,6 +1,8 @@
 package org.yalico.backend.apirest.app.infrastructure.repository;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 import org.yalico.backend.apirest.app.domain.models.Cliente;
 import org.yalico.backend.apirest.app.domain.ports.output.ClienteRepositoryPort;
@@ -38,6 +40,12 @@ public class ClienteEntityAdapter implements ClienteRepositoryPort {
                 .stream()
                 .map(repositoryMapper::toCliente)
                 .toList();
+    }
+
+    @Override
+    public Page<Cliente> findAll(Pageable pageable) {
+        return clienteEntityRepository.findAll(pageable)
+                .map(repositoryMapper::toCliente);
     }
 
     @Override

@@ -16,7 +16,8 @@ public class ApplicationConfig {
                 new ActualizarClienteUseCaseImpl(clienteRepositoryPort),
                 new FindClientesUseCaseImpl(clienteRepositoryPort),
                 new DeleteClienteUseCaseImpl(clienteRepositoryPort),
-                new CrearClienteUseCaseImpl(clienteRepositoryPort));
+                new CrearClienteUseCaseImpl(clienteRepositoryPort),
+                new FindClientesPageableUseCaseImpl(clienteRepositoryPort));
     }
 
 //    @Bean

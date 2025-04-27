@@ -1,0 +1,322 @@
+2025-04-24 10:39:59,244 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 12180 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-24 10:39:59,247 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-24 10:40:02,928 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-24 10:40:04,152 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-24 10:40:05,495 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] [-] SQL Error: 0, SQLState: 08001
+2025-04-24 10:40:05,495 ERROR o.h.e.j.s.SqlExceptionHelper [restartedMain] [-] Public Key Retrieval is not allowed
+2025-04-24 10:40:05,496 WARN o.h.e.j.e.i.JdbcEnvironmentInitiator [restartedMain] [-] HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Public Key Retrieval is not allowed] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.yalico.backend.apirest.app.BackendApiApplication.main(BackendApiApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:102)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:76)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:122)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:40)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:436)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:206)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1333)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 51 common frames omitted
+2025-04-24 10:40:05,522 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-24 10:40:05,524 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-24 10:40:06,751 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-24 10:40:07,757 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] [-] SQL Error: 0, SQLState: 08001
+2025-04-24 10:40:07,757 ERROR o.h.e.j.s.SqlExceptionHelper [restartedMain] [-] Public Key Retrieval is not allowed
+2025-04-24 10:40:07,762 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] [-] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
+2025-04-24 10:40:07,762 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [restartedMain] [-] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
+2025-04-24 10:40:07,812 ERROR o.s.b.SpringApplication [restartedMain] [-] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.yalico.backend.apirest.app.BackendApiApplication.main(BackendApiApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	... 22 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:102)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 43 common frames omitted
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:76)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:122)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:40)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:436)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:206)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1333)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 56 common frames omitted
+2025-04-24 10:42:15,847 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 17216 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-24 10:42:15,850 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-24 10:42:17,804 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-24 10:42:18,569 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-24 10:42:18,838 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@744be50a
+2025-04-24 10:42:18,840 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-24 10:42:18,904 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-24 10:42:18,906 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-24 10:42:20,280 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-24 10:42:20,771 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-24 10:42:20,807 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 5.719 seconds (process running for 6.301)
+2025-04-24 10:42:34,274 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 10:42:42,495 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 10:42:48,441 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-3] [-] Buscando cliente por ID: 11
+2025-04-24 10:42:48,462 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 10:42:50,206 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 10:49:17,956 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 14:34:52,489 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] [-] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h51m2s4ms911µs800ns).
+2025-04-24 14:49:19,269 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-24 14:49:19,275 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
+2025-04-24 15:09:22,410 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 13016 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-24 15:09:22,413 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-24 15:09:26,454 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-24 15:09:27,976 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-24 15:09:28,403 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b560d2b
+2025-04-24 15:09:28,405 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-24 15:09:28,499 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-24 15:09:28,501 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-24 15:09:31,182 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-24 15:09:32,086 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-24 15:09:32,133 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 11.402 seconds (process running for 20.532)
+2025-04-24 15:13:15,051 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:26:49,608 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-4] [-] Creando cliente: ClienteDTORequest[nombre=Jose, apellidos=Ampuero, email=ampuero@ucv.com]
+2025-04-24 15:26:49,640 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id from clientes ce1_0 where ce1_0.email=? limit ?
+2025-04-24 15:26:49,667 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] insert into clientes (apellidos,create_at,email,nombre) values (?,?,?,?)
+2025-04-24 15:26:49,775 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:28:43,964 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-7] [-] Creando cliente: ClienteDTORequest[nombre=Timoti (Actualizado), apellidos=sanches perez (Actualizado), email=jeanpiero_23_01@hotmail.com]
+2025-04-24 15:28:43,966 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id from clientes ce1_0 where ce1_0.email=? limit ?
+2025-04-24 15:28:43,981 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-7] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteYaExistente: Ya existe un cliente registrado con el email: jeanpiero_23_01@hotmail.com]
+2025-04-24 15:28:55,127 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-8] [-] Creando cliente: ClienteDTORequest[nombre=Timoti (Actualizado), apellidos=sanches perez (Actualizado), email=jeanpiero_23_01@hotmail.com]
+2025-04-24 15:28:55,129 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id from clientes ce1_0 where ce1_0.email=? limit ?
+2025-04-24 15:28:55,133 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteYaExistente: Ya existe un cliente registrado con el email: jeanpiero_23_01@hotmail.com]
+2025-04-24 15:31:00,328 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-10] [-] Creando cliente: ClienteDTORequest[nombre=Juan (actualizado), apellidos=sanches perez, email=jeanpiero_23_01@hotmail.com]
+2025-04-24 15:31:00,330 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id from clientes ce1_0 where ce1_0.email=? limit ?
+2025-04-24 15:31:00,334 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-10] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteYaExistente: Ya existe un cliente registrado con el email: jeanpiero_23_01@hotmail.com]
+2025-04-24 15:31:22,072 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-1] [-] Creando cliente: ClienteDTORequest[nombre=Juan (actualizado), apellidos=Yalico Cristobal, email=cristobal_09@hotmail.com]
+2025-04-24 15:31:22,074 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id from clientes ce1_0 where ce1_0.email=? limit ?
+2025-04-24 15:31:22,075 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] insert into clientes (apellidos,create_at,email,nombre) values (?,?,?,?)
+2025-04-24 15:31:22,135 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:31:29,723 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-3] [-] Buscando cliente por ID: 11
+2025-04-24 15:31:29,742 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 15:31:31,770 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-5] [-] Actualizando cliente: ClienteDTORequest[nombre=Timoti (Actualizado), apellidos=sanches perez (Actualizado)qqq, email=cristobal_09@hotmail.com]
+2025-04-24 15:31:31,771 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 15:31:31,777 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-24 15:31:31,779 WARN o.y.b.a.a.a.u.ActualizarClienteUseCaseImpl [http-nio-8080-exec-5] [-] Intento de duplicación de cliente con email existente: cristobal_09@hotmail.com
+2025-04-24 15:31:31,781 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-5] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteDuplicado: Ya existe otro cliente con el mismo email cristobal_09@hotmail.com]
+2025-04-24 15:31:36,723 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:31:43,580 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 15:31:43,594 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] delete from clientes where id=?
+2025-04-24 15:33:33,581 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:33:35,478 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:33:38,042 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:33:39,173 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-3] [-] Buscando cliente por ID: 12
+2025-04-24 15:33:39,175 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 15:33:42,430 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:33:45,140 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-5] [-] Buscando cliente por ID: 13
+2025-04-24 15:33:45,142 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 15:33:46,910 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-7] [-] Actualizando cliente: ClienteDTORequest[nombre=Jose, apellidos=Ampuero, email=jeanpiero_23_01@hotmail.com]
+2025-04-24 15:33:46,910 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 15:33:46,914 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.email=?
+2025-04-24 15:33:46,916 WARN o.y.b.a.a.a.u.ActualizarClienteUseCaseImpl [http-nio-8080-exec-7] [-] Intento de duplicación de cliente con email existente: jeanpiero_23_01@hotmail.com
+2025-04-24 15:33:46,918 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-7] [-] Resolved [org.yalico.backend.apirest.app.domain.exception.ClienteDuplicado: Ya existe otro cliente con el mismo email jeanpiero_23_01@hotmail.com]
+2025-04-24 15:34:00,696 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:34:07,677 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-9] [-] Buscando cliente por ID: 12
+2025-04-24 15:34:07,679 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 15:34:10,522 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:34:11,560 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-1] [-] Buscando cliente por ID: 11
+2025-04-24 15:34:11,562 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-24 15:34:12,761 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:34:23,337 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:34:25,112 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 15:55:08,801 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:23:39,844 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:24:42,801 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:25:21,562 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:25:24,855 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:25:30,624 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:25:32,003 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:25:49,435 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:26:06,125 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:27:10,157 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:27:21,111 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:28:37,845 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:33:10,685 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:34:37,087 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:34:38,867 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:34:47,663 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:35:06,542 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:37:05,214 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:37:27,608 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:37:40,534 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:37:40,949 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:38:27,515 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:38:29,653 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:38:34,272 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:38:54,673 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:38:55,773 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:38:58,039 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:40:10,677 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:51:10,817 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:52:36,763 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:52:49,232 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:52:52,926 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:52:53,618 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:53:17,326 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:53:22,052 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:53:31,676 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:53:32,811 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:53:35,654 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:53:36,981 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:53:43,841 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:54:17,669 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 16:54:32,646 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:03:58,840 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:04:21,653 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:04:23,977 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:06:32,733 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:08:19,612 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:08:28,150 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:09:26,953 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:09:37,455 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:09:50,126 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:09:53,571 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:10:01,891 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:11:49,376 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:11:58,269 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:12:11,215 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:12:12,224 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:13:21,607 DEBUG org.hibernate.SQL [http-nio-8080-exec-8] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:13:46,332 DEBUG org.hibernate.SQL [http-nio-8080-exec-9] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0
+2025-04-24 17:45:56,068 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-24 17:45:56,074 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
