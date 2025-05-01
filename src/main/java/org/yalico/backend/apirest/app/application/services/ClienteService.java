@@ -73,4 +73,10 @@ public class ClienteService implements FindClientesUseCase,
     public Page<Cliente> findAll(Pageable pageable) {
         return findClientesPageableUseCase.findAll(pageable);
     }
+
+    @Transactional(readOnly = true)
+    @Override
+    public Page<Cliente> findByFilter(String filter, Pageable pageable) {
+        return findClientesPageableUseCase.findByFilter(filter, pageable);
+    }
 }

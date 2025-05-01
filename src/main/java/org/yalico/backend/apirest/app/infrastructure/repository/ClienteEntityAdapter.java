@@ -49,6 +49,12 @@ public class ClienteEntityAdapter implements ClienteRepositoryPort {
     }
 
     @Override
+    public Page<Cliente> findByNombreContainingOrEmailContaining(String nombre, String email, Pageable pageable) {
+        return clienteEntityRepository.findByNombreContainingOrEmailContaining(nombre,email, pageable)
+                .map(repositoryMapper::toCliente);
+    }
+
+    @Override
     public Boolean existByEmail(String email) {
         return clienteEntityRepository.existsByEmail(email);
     }

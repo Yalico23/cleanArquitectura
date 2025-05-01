@@ -16,4 +16,9 @@ public class FindClientesPageableUseCaseImpl implements FindClientePageableUseCa
     public Page<Cliente> findAll(Pageable pageable) {
         return repositoryPort.findAll(pageable);
     }
+
+    @Override
+    public Page<Cliente> findByFilter(String filter, Pageable pageable) {
+        return repositoryPort.findByNombreContainingOrEmailContaining(filter, filter, pageable);
+    }
 }

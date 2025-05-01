@@ -14,6 +14,7 @@ public interface ClienteRepositoryPort {
     void deleteById(Long id);
     List<Cliente> findAll();
     Page<Cliente> findAll(Pageable pageable);
+    Page<Cliente> findByNombreContainingOrEmailContaining(String nombre, String email, Pageable pageable);
     Boolean existByEmail(String email);
     Optional<Cliente> findByEmail(String email);
 }

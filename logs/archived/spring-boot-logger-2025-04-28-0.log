@@ -1,0 +1,51 @@
+2025-04-28 16:09:53,164 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 11792 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-28 16:09:53,168 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:09:56,511 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-28 16:09:57,876 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-28 16:09:58,256 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e84a81a
+2025-04-28 16:09:58,260 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-28 16:09:58,367 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-28 16:09:58,369 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-28 16:10:00,796 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-28 16:10:01,642 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-28 16:10:01,698 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 9.36 seconds (process running for 15.888)
+2025-04-28 16:11:15,905 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-1] [-] Buscando clientes con paginable
+2025-04-28 16:11:16,137 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 limit ?,?
+2025-04-28 16:11:16,238 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] [-] select count(ce1_0.id) from clientes ce1_0
+2025-04-28 16:11:16,362 WARN o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [http-nio-8080-exec-1] [-] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-04-28 16:11:23,559 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-2] [-] Buscando cliente por ID: 12
+2025-04-28 16:11:23,576 DEBUG org.hibernate.SQL [http-nio-8080-exec-2] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.id=?
+2025-04-28 16:11:24,973 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-3] [-] Buscando clientes con paginable
+2025-04-28 16:11:24,976 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 limit ?,?
+2025-04-28 16:11:24,980 DEBUG org.hibernate.SQL [http-nio-8080-exec-3] [-] select count(ce1_0.id) from clientes ce1_0
+2025-04-28 16:56:35,003 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-28 16:56:35,009 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.
+2025-04-28 17:25:15,327 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Starting BackendApiApplication using Java 20.0.1 with PID 7204 (C:\Users\Oscar\Desktop\backend-api\target\classes started by Oscar in C:\Users\Oscar\Desktop\backend-api)
+2025-04-28 17:25:15,330 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] No active profile set, falling back to 1 default profile: "default"
+2025-04-28 17:25:17,526 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-28 17:25:19,830 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Starting...
+2025-04-28 17:25:20,045 INFO c.z.h.p.HikariPool [restartedMain] [-] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53d02111
+2025-04-28 17:25:20,047 INFO c.z.h.HikariDataSource [restartedMain] [-] HikariPool-1 - Start completed.
+2025-04-28 17:25:20,105 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-28 17:25:20,106 WARN o.h.orm.deprecation [restartedMain] [-] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-28 17:25:21,546 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] [-] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-28 17:25:22,089 INFO o.a.c.h.Http11NioProtocol [restartedMain] [-] Starting ProtocolHandler ["http-nio-8080"]
+2025-04-28 17:25:22,127 INFO o.y.b.a.a.BackendApiApplication [restartedMain] [-] Started BackendApiApplication in 7.571 seconds (process running for 8.169)
+2025-04-28 17:26:06,402 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] [-] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'filter' for method parameter type String is not present]
+2025-04-28 17:26:53,746 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] [-] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'filter' for method parameter type String is not present]
+2025-04-28 17:28:33,637 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-6] [-] Buscando clientes con filtro: id
+2025-04-28 17:28:33,914 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.nombre like ? escape '\\' or ce1_0.email like ? escape '\\' order by ce1_0.id limit ?
+2025-04-28 17:28:33,973 WARN o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [http-nio-8080-exec-6] [-] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-04-28 17:29:05,232 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-7] [-] Buscando clientes con filtro: nombre
+2025-04-28 17:29:05,237 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.nombre like ? escape '\\' or ce1_0.email like ? escape '\\' order by ce1_0.id limit ?
+2025-04-28 17:29:40,848 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] [-] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'filter' for method parameter type String is not present]
+2025-04-28 17:30:15,376 INFO o.y.b.a.a.i.c.ClienteControllers [http-nio-8080-exec-10] [-] Buscando clientes con filtro: Ana
+2025-04-28 17:30:15,382 DEBUG org.hibernate.SQL [http-nio-8080-exec-10] [-] select ce1_0.id,ce1_0.apellidos,ce1_0.create_at,ce1_0.email,ce1_0.nombre from clientes ce1_0 where ce1_0.nombre like ? escape '\\' or ce1_0.email like ? escape '\\' order by ce1_0.id limit ?
+2025-04-28 17:33:01,012 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown initiated...
+2025-04-28 17:33:01,023 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] [-] HikariPool-1 - Shutdown completed.

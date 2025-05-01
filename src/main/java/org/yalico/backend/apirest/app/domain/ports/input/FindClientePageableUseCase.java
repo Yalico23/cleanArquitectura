@@ -6,4 +6,5 @@ import org.yalico.backend.apirest.app.domain.models.Cliente;
 
 public interface FindClientePageableUseCase {
     Page<Cliente> findAll(Pageable pageable);
+    Page<Cliente> findByFilter(String filter, Pageable pageable);
 }
